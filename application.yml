@@ -1,0 +1,20 @@
+﻿spring:
+  profiles:
+    active:
+      -dev
+---
+spring:
+  profiles: dev #测试环境
+  application:
+    name: project-name-dev
+    
+server:
+  port: 8002    
+---
+spring:
+  profiles: prod #开发环境
+  application:
+    name: project-name-prod    
+    
+server:
+  port: 8003
